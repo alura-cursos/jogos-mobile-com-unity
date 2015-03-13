@@ -122,6 +122,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 344166415}
+  - 114: {fileID: 344166416}
   m_Layer: 0
   m_Name: Torre
   m_TagString: Untagged
@@ -136,13 +137,26 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 344166414}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: .649999976}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1384093099}
   - {fileID: 1814666600}
   m_Father: {fileID: 0}
   m_RootOrder: 5
+--- !u!114 &344166416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 344166414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ec20ab55683341389e640250e74743a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projetil: {fileID: 188592, guid: 7020cdecd7c2b4d14b030bef051fd3af, type: 2}
+  tempoDeRecarga: .479999989
 --- !u!1 &408254413
 GameObject:
   m_ObjectHideFlags: 0
@@ -215,6 +229,33 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
+--- !u!1 &632725633
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 632725634}
+  m_Layer: 0
+  m_Name: PontoDeDisparo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &632725634
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 632725633}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -.100000001, z: .800000012}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1814666600}
+  m_RootOrder: 0
 --- !u!1 &780841769
 GameObject:
   m_ObjectHideFlags: 0
@@ -481,7 +522,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 1.54999995, z: 0}
   m_LocalScale: {x: .25, y: .25, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 632725634}
   m_Father: {fileID: 344166415}
   m_RootOrder: 1
 --- !u!23 &1814666601
