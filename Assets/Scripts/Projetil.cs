@@ -1,11 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Projetil : MonoBehaviour {
+public class Projetil : MonoBehaviour 
+{
 
 	[Range(0,5)]
 	public float velocidade;
 	private GameObject alvo;
+	public int pontosDeDano;
 
 	void Start () 
 	{
@@ -45,7 +47,8 @@ public class Projetil : MonoBehaviour {
 		if (elementoColidido.CompareTag ("Inimigo")) 
 		{
 			Destroy (this.gameObject);
-			Destroy (elementoColidido.gameObject);
+			Inimigo inimigo = elementoColidido.GetComponent<Inimigo>();
+			inimigo.recebeDano(pontosDeDano);
 		}
 	}
 }
