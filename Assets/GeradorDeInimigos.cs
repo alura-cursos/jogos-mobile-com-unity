@@ -19,4 +19,5 @@ public class GeradorDeInimigos : MonoBehaviour
 			Vector3 posicaoDoGerador = this.transform.position;
 			Instantiate (inimigo, posicaoDoGerador, Quaternion.identity);
 		}
-	}}
+	}
+}

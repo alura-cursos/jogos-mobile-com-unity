@@ -196,7 +196,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ec20ab55683341389e640250e74743a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projetil: {fileID: 188592, guid: 7020cdecd7c2b4d14b030bef051fd3af, type: 2}
+  projetilPrefab: {fileID: 188592, guid: 7020cdecd7c2b4d14b030bef051fd3af, type: 2}
+  raioDeAlcance: 2
   tempoDeRecarga: 1
 --- !u!1 &408254413
 GameObject:

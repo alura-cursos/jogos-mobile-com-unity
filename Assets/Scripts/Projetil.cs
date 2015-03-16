@@ -6,12 +6,11 @@ public class Projetil : MonoBehaviour
 
 	[Range(0,5)]
 	public float velocidade;
-	private GameObject alvo;
+	private Inimigo alvo;
 	public int pontosDeDano;
 
 	void Start () 
 	{
-		alvo = GameObject.Find("Inimigo");
 		autoDestroiDepoisDeSegundos (10);
 	}
 
@@ -22,6 +21,11 @@ public class Projetil : MonoBehaviour
 		{
 			alteraDirecao ();
 		}
+	}
+
+	public void defineAlvo(Inimigo inimigo) 
+	{
+		alvo = inimigo;	
 	}
 
 	private void anda()
@@ -39,11 +43,13 @@ public class Projetil : MonoBehaviour
 		transform.rotation = Quaternion.LookRotation (direcaoDoAlvo);
 	}
 
-	private void autoDestroiDepoisDeSegundos(float segundos) {
+	private void autoDestroiDepoisDeSegundos(float segundos) 
+	{
 		Destroy (this.gameObject, segundos);
 	}
 
-	void OnTriggerEnter (Collider elementoColidido) {
+	void OnTriggerEnter (Collider elementoColidido) 
+	{
 		if (elementoColidido.CompareTag ("Inimigo")) 
 		{
 			Destroy (this.gameObject);
