@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class TorreController : MonoBehaviour {
+public class TorreController : MonoBehaviour 
+{
 
 	public GameObject projetil;
 	private float momentoDoUltimoDisparo;
@@ -12,7 +13,8 @@ public class TorreController : MonoBehaviour {
 	void Update () 
 	{
 		float tempoAtual = Time.time;
-		if (tempoAtual > momentoDoUltimoDisparo + tempoDeRecarga) {
+		if (tempoAtual > momentoDoUltimoDisparo + tempoDeRecarga) 
+		{
 			momentoDoUltimoDisparo = tempoAtual;
 			GameObject pontoDeDisparo = GameObject.Find ("CanhaoDaTorre/PontoDeDisparo");
 			Vector3 posicaoDoPontoDeDisparo = pontoDeDisparo.transform.position;

@@ -156,7 +156,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projetil: {fileID: 188592, guid: 7020cdecd7c2b4d14b030bef051fd3af, type: 2}
-  tempoDeRecarga: .479999989
+  tempoDeRecarga: 1
 --- !u!1 &408254413
 GameObject:
   m_ObjectHideFlags: 0
@@ -331,7 +331,7 @@ GameObject:
   - 114: {fileID: 1259839793}
   m_Layer: 0
   m_Name: Inimigo
-  m_TagString: Untagged
+  m_TagString: Inimigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
