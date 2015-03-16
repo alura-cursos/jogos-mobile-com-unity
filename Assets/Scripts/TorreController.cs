@@ -51,7 +51,7 @@ public class TorreController : MonoBehaviour
 		if (tempoAtual > momentoDoUltimoDisparo + tempoDeRecarga) 
 		{
 			momentoDoUltimoDisparo = tempoAtual;
-			GameObject pontoDeDisparo = GameObject.Find ("CanhaoDaTorre/PontoDeDisparo");
+			GameObject pontoDeDisparo = this.transform.Find ("CanhaoDaTorre/PontoDeDisparo").gameObject;
 			Vector3 posicaoDoPontoDeDisparo = pontoDeDisparo.transform.position;
 			GameObject projetilObject = (GameObject) Instantiate (projetilPrefab, posicaoDoPontoDeDisparo, Quaternion.identity);
 			Projetil projetil = projetilObject.GetComponent<Projetil>();
