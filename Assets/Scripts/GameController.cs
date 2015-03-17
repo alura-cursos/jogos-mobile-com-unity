@@ -58,4 +58,9 @@ public class GameController : MonoBehaviour
 	{
 		return !jogador.EstaVivo ();
 	}
+
+	public void RecomecaJogo ()
+	{
+		Application.LoadLevel (Application.loadedLevel);
+	}
 }
