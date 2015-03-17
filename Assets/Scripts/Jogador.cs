@@ -14,6 +14,14 @@ public class Jogador : MonoBehaviour
 
 	public void PerdeVida () 
 	{
-		vida --;
+		if (EstaVivo ()) 
+		{
+			vida --;
+		}
+	}
+
+	public bool EstaVivo () 
+	{
+		return vida > 0;
 	}
 }

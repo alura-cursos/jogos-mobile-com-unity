@@ -2,7 +2,7 @@
 using System.Collections;
 using UnityEngine.UI;
 
-public class ContadorDeVida : MonoBehaviour 
+public class MostradorDeVida : MonoBehaviour 
 {
 	private Text campoTexto;
 	public Jogador jogador;

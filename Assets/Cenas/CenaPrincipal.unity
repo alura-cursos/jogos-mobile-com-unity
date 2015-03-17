@@ -209,6 +209,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   torrePrefab: {fileID: 138602, guid: 3553b3bbcfbb3493aa1b3330d913aac6, type: 2}
+  jogador: {fileID: 406666194}
+  gameOver: {fileID: 1270537772}
 --- !u!4 &148401679
 Transform:
   m_ObjectHideFlags: 0
@@ -405,7 +407,7 @@ GameObject:
   - 114: {fileID: 1130402158}
   - 114: {fileID: 1130402157}
   m_Layer: 5
-  m_Name: ContadorDeVida
+  m_Name: MostradorDeVida
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -436,7 +438,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1130402155}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 11a5b35b016404456808400eee9318f5, type: 3}
+  m_Script: {fileID: 11500000, guid: 5ebef484d5fc048389cd6106ec6b2b9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   jogador: {fileID: 406666194}

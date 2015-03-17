@@ -1,21 +1,33 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class GameController : MonoBehaviour 
 {
 	public GameObject torrePrefab;
+	[SerializeField]
+	private Jogador jogador;
+	[SerializeField]
+	private Text gameOver;
+
+	void Start ()
+	{
+		gameOver.enabled = false;
+	}
 
 	void Update () 
 	{
-		if (clicouComBotaoPrimario()) 
+		if (! JogoAcabou ()) 
 		{
-			Vector3 posicaoDoClique = Input.mousePosition;
-			RaycastHit elementoAtingidoPeloRaio = disparaRaioDaCameraAteUmPonto(posicaoDoClique);
-			if(elementoAtingidoPeloRaio.collider != null) {
-				Vector3 posicaoDoElemento = elementoAtingidoPeloRaio.point;
-				Instantiate(torrePrefab, posicaoDoElemento, Quaternion.identity);
+			if (clicouComBotaoPrimario ()) 
+			{
+				constroiTorre ();
 			}
+		} else 
+		{
+			gameOver.enabled = true;
 		}
+
 	}
 
 	private bool clicouComBotaoPrimario() 
@@ -30,5 +42,20 @@ public class GameController : MonoBehaviour
 		float comprimentoMaximoDoRaio = 100.0f;
 		Physics.Raycast (raio, out elementoAtingidoPeloRaio, comprimentoMaximoDoRaio);
 		return elementoAtingidoPeloRaio;
+	}
+
+	private void constroiTorre ()
+	{
+		Vector3 posicaoDoClique = Input.mousePosition;
+		RaycastHit elementoAtingidoPeloRaio = disparaRaioDaCameraAteUmPonto(posicaoDoClique);
+		if(elementoAtingidoPeloRaio.collider != null) {
+			Vector3 posicaoDoElemento = elementoAtingidoPeloRaio.point;
+			Instantiate(torrePrefab, posicaoDoElemento, Quaternion.identity);
+		}
+	}
+
+	private bool JogoAcabou ()
+	{
+		return !jogador.EstaVivo ();
 	}
 }
