@@ -136,6 +136,8 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 105802039}
+  - 65: {fileID: 105802040}
+  - 114: {fileID: 105802041}
   m_Layer: 0
   m_Name: FimDoCaminho
   m_TagString: Untagged
@@ -150,11 +152,35 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 105802038}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.45599985, y: 0, z: -4}
+  m_LocalPosition: {x: 6.45599985, y: 0, z: -3.9000001}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
+--- !u!65 &105802040
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 105802038}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: .150000006}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &105802041
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 105802038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d3f0e27cc2b2472881f10350b59b015, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jogador: {fileID: 406666194}
 --- !u!1 &148401677
 GameObject:
   m_ObjectHideFlags: 0

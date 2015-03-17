@@ -13,6 +13,7 @@ GameObject:
   - 23: {fileID: 2394374}
   - 195: {fileID: 19585652}
   - 114: {fileID: 11478842}
+  - 54: {fileID: 5414926}
   m_Layer: 0
   m_Name: Inimigo
   m_TagString: Inimigo
@@ -63,6 +64,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 124400}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &5414926
+Rigidbody:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 124400}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!65 &6555908
 BoxCollider:
   m_ObjectHideFlags: 1
