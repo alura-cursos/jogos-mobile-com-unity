@@ -102,7 +102,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidade: 5
-  pontosDeDano: 5
+  pontosDeDano: 2
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
