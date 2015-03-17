@@ -8,11 +8,11 @@ public class GameController : MonoBehaviour
 	[SerializeField]
 	private Jogador jogador;
 	[SerializeField]
-	private Text gameOver;
+	private GameObject gameOver;
 
 	void Start ()
 	{
-		gameOver.enabled = false;
+		gameOver.SetActive(false);
 	}
 
 	void Update () 
@@ -25,7 +25,7 @@ public class GameController : MonoBehaviour
 			}
 		} else 
 		{
-			gameOver.enabled = true;
+			gameOver.SetActive(true);
 		}
 
 	}
