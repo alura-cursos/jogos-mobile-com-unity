@@ -11,7 +11,7 @@ GameObject:
   - 114: {fileID: 11498452}
   m_Layer: 0
   m_Name: PontoGeradorDeInimigosRapidos
-  m_TagString: Untagged
+  m_TagString: PontoGerador
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -41,6 +41,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inimigo: {fileID: 124400, guid: 7bc9a6754c1a54da0b6f9488cff2c6d5, type: 2}
   tempoDeCriacao: 2
+  quantidadeDeInimigos: 5
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
