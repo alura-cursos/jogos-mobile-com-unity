@@ -88,47 +88,6 @@ NavMeshSettings:
     cellSize: .0500000007
     manualCellSize: 0
   m_NavMeshData: {fileID: 23800000, guid: 8b66f5f8bde6f453aa42281d0ae96708, type: 2}
---- !u!1 &1229728
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1229730}
-  - 114: {fileID: 1229729}
-  m_Layer: 0
-  m_Name: PontoGeradorDeInimigos
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1229729
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1229728}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cba2477c9041b43a7aaf6d48913c8869, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inimigo: {fileID: 124400, guid: 7bc9a6754c1a54da0b6f9488cff2c6d5, type: 2}
-  tempoDeCriacao: 2
---- !u!4 &1229730
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1229728}
-  m_LocalRotation: {x: 0, y: .707106829, z: 0, w: .707106709}
-  m_LocalPosition: {x: -6.5, y: 0, z: .920000017}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
 --- !u!1 &105802038
 GameObject:
   m_ObjectHideFlags: 0
@@ -223,7 +182,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
 --- !u!1 &406666193
 GameObject:
   m_ObjectHideFlags: 0
@@ -263,7 +222,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
 --- !u!1 &408254413
 GameObject:
   m_ObjectHideFlags: 0
@@ -336,6 +295,48 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
+--- !u!1 &754876128
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 754876130}
+  - 114: {fileID: 754876129}
+  m_Layer: 0
+  m_Name: GerenciadorDeInimigos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &754876129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 754876128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27655b4dee9e64167bdb1fe7b552b74f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  geradores:
+  - {fileID: 11498452, guid: 5c85874ec1d664d2ca8c1b88b7cf2331, type: 2}
+  - {fileID: 11498452, guid: 3142a3e4fbb2f4d6d8b64cf534e5dbcc, type: 2}
+--- !u!4 &754876130
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 754876128}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 20, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
 --- !u!1 &780841769
 GameObject:
   m_ObjectHideFlags: 0
@@ -824,7 +825,7 @@ RectTransform:
   - {fileID: 1130402156}
   - {fileID: 1270537770}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
@@ -986,4 +987,4 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
