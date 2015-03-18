@@ -14,7 +14,7 @@ GameObject:
   - 195: {fileID: 19585652}
   - 114: {fileID: 11478842}
   - 54: {fileID: 5414926}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: InimigoLento
   m_TagString: Inimigo
   m_Icon: {fileID: 0}
