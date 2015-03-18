@@ -6,10 +6,13 @@ public class DetectorDeCruzamento : MonoBehaviour
 	[SerializeField]
 	private Jogador jogador;
 
-	void OnTriggerEnter (Collider inimigo) 
+	void OnTriggerEnter (Collider collider) 
 	{
-		Debug.Log ("Chegou no fim do caminho!");
-		Destroy (inimigo.gameObject);
-		jogador.PerdeVida ();
+		if (collider.CompareTag ("Inimigo")) 
+		{
+			Debug.Log ("Chegou no fim do caminho!");
+			Destroy (collider.gameObject);
+			jogador.PerdeVida ();
+		}
 	}
 }

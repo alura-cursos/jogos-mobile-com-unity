@@ -115,7 +115,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cba2477c9041b43a7aaf6d48913c8869, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inimigo: {fileID: 124400, guid: e64c2c88a6b564dc6931bada223c0d03, type: 2}
+  inimigo: {fileID: 124400, guid: 7bc9a6754c1a54da0b6f9488cff2c6d5, type: 2}
   tempoDeCriacao: 2
 --- !u!4 &1229730
 Transform:
