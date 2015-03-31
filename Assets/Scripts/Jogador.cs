@@ -7,9 +7,17 @@ public class Jogador : MonoBehaviour
 	[SerializeField]
 	private int vida;
 
+	[SerializeField] 
+	private int dinheiro;
+
 	public int GetVida () 
 	{
 		return vida;
+	}
+
+	public int GetDinheiro ()
+	{
+		return dinheiro;
 	}
 
 	public void PerdeVida () 
