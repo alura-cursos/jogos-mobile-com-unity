@@ -10,11 +10,12 @@ public class TorreController : MonoBehaviour
 
 	[Range(0,3)]
 	public float tempoDeRecarga = 1f;
-//
+
 	void Update () 
 	{
 		Inimigo alvo = escolheAlvo ();
 		if (alvo != null) {
+			mira (alvo);
 			atira (alvo);
 		}
 	}
@@ -57,5 +58,13 @@ public class TorreController : MonoBehaviour
 			Projetil projetil = projetilObject.GetComponent<Projetil>();
 			projetil.defineAlvo(inimigo);
 		}
+	}
+
+	private void mira (Inimigo inimigo)
+	{
+		Vector3 direcaoDoAlvoNoPlano = Vector3.ProjectOnPlane(inimigo.transform.position - transform.position, Vector3.up);
+		Quaternion rotacaoDoCanhao = Quaternion.LookRotation (direcaoDoAlvoNoPlano);
+		GameObject canhaoDaTorre = this.transform.Find ("CanhaoDaTorre").gameObject;
+		canhaoDaTorre.transform.rotation = rotacaoDoCanhao;
 	}
 }
