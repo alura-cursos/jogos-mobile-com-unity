@@ -25,7 +25,7 @@ GameObject:
   - 4: {fileID: 431386}
   - 114: {fileID: 11487744}
   m_Layer: 0
-  m_Name: Torre
+  m_Name: TorreForte
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -190,9 +190,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projetilPrefab: {fileID: 128526, guid: c7212fa4fd6a146b99bc21167e254979, type: 2}
-  raioDeAlcance: 2
-  custo: 20
-  tempoDeRecarga: 1
+  raioDeAlcance: 4
+  custo: 50
+  tempoDeRecarga: .5
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

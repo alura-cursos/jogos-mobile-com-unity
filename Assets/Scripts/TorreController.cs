@@ -7,6 +7,7 @@ public class TorreController : MonoBehaviour
 	public GameObject projetilPrefab;
 	public float raioDeAlcance;
 	private float momentoDoUltimoDisparo;
+	[SerializeField] private int custo;
 
 	[Range(0,3)]
 	public float tempoDeRecarga = 1f;
