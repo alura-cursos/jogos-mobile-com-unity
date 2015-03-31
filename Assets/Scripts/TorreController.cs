@@ -65,6 +65,6 @@ public class TorreController : MonoBehaviour
 		Vector3 direcaoDoAlvoNoPlano = Vector3.ProjectOnPlane(inimigo.transform.position - transform.position, Vector3.up);
 		Quaternion rotacaoDoCanhao = Quaternion.LookRotation (direcaoDoAlvoNoPlano);
 		GameObject canhaoDaTorre = this.transform.Find ("CanhaoDaTorre").gameObject;
-		canhaoDaTorre.transform.rotation = rotacaoDoCanhao;
+		canhaoDaTorre.transform.rotation = Quaternion.Slerp(canhaoDaTorre.transform.rotation, rotacaoDoCanhao, Time.deltaTime * 5f);
 	}
 }
