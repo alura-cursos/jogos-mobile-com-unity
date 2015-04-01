@@ -32,4 +32,14 @@ public class Jogador : MonoBehaviour
 	{
 		return vida > 0;
 	}
+
+	public bool podeGastar (int dinheiro)
+	{
+		return this.dinheiro >= dinheiro;
+	}
+
+	public void gasta (int dinheiro)
+	{
+		this.dinheiro -= dinheiro;
+	}
 }

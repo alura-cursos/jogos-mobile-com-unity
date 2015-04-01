@@ -12,6 +12,11 @@ public class TorreController : MonoBehaviour
 	[Range(0,3)]
 	public float tempoDeRecarga = 1f;
 
+	public int GetCusto ()
+	{
+		return custo;
+	}
+
 	void Update () 
 	{
 		Inimigo alvo = escolheAlvo ();
