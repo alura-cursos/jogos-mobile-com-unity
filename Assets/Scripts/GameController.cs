@@ -8,6 +8,7 @@ public class GameController : MonoBehaviour
 	[SerializeField] private Jogador jogador;
 	[SerializeField] private GameObject gameOver;
 	[SerializeField] private FabricaDeTorre fabricaDeTorre;
+	[SerializeField] private GameObject selecao;
 
 	void Start ()
 	{
@@ -49,6 +50,7 @@ public class GameController : MonoBehaviour
 		if(elementoAtingidoPeloRaio.collider != null) {
 			Vector3 posicaoDoElemento = elementoAtingidoPeloRaio.point;
 			fabricaDeTorre.SetLocalDeConstrucao(posicaoDoElemento);
+			selecao.transform.position = posicaoDoElemento;
 //			Instantiate(torrePrefab, posicaoDoElemento, Quaternion.identity);
 		}
 	}
