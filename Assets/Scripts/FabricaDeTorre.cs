@@ -6,7 +6,7 @@ public class FabricaDeTorre : MonoBehaviour
 	private Vector3 localDeConstrucao;
 	[SerializeField] private Jogador jogador;
 
-	public void criaTorre (GameObject torrePrefab)
+	public void cria (GameObject torrePrefab)
 	{
 		TorreController torre = torrePrefab.GetComponent<TorreController> ();
 		int custoDaTorre = torre.GetCusto ();
