@@ -171,6 +171,7 @@ MonoBehaviour:
   torrePrefab: {fileID: 138602, guid: 3553b3bbcfbb3493aa1b3330d913aac6, type: 2}
   jogador: {fileID: 406666194}
   gameOver: {fileID: 1270537769}
+  fabricaDeTorre: {fileID: 1470407141}
 --- !u!4 &148401679
 Transform:
   m_ObjectHideFlags: 0

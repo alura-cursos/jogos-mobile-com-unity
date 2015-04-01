@@ -5,10 +5,9 @@ using UnityEngine.UI;
 public class GameController : MonoBehaviour 
 {
 	public GameObject torrePrefab;
-	[SerializeField]
-	private Jogador jogador;
-	[SerializeField]
-	private GameObject gameOver;
+	[SerializeField] private Jogador jogador;
+	[SerializeField] private GameObject gameOver;
+	[SerializeField] private FabricaDeTorre fabricaDeTorre;
 
 	void Start ()
 	{
@@ -21,13 +20,12 @@ public class GameController : MonoBehaviour
 		{
 			if (clicouComBotaoPrimario ()) 
 			{
-				constroiTorre ();
+				selecionaLocalParaConstrucao ();
 			}
 		} else 
 		{
 			gameOver.SetActive(true);
 		}
-
 	}
 
 	private bool clicouComBotaoPrimario() 
@@ -44,13 +42,14 @@ public class GameController : MonoBehaviour
 		return elementoAtingidoPeloRaio;
 	}
 
-	private void constroiTorre ()
+	private void selecionaLocalParaConstrucao ()
 	{
 		Vector3 posicaoDoClique = Input.mousePosition;
 		RaycastHit elementoAtingidoPeloRaio = disparaRaioDaCameraAteUmPonto(posicaoDoClique);
 		if(elementoAtingidoPeloRaio.collider != null) {
 			Vector3 posicaoDoElemento = elementoAtingidoPeloRaio.point;
-			Instantiate(torrePrefab, posicaoDoElemento, Quaternion.identity);
+			fabricaDeTorre.SetLocalDeConstrucao(posicaoDoElemento);
+//			Instantiate(torrePrefab, posicaoDoElemento, Quaternion.identity);
 		}
 	}
 
