@@ -61,8 +61,8 @@ public class TorreController : MonoBehaviour
 			GameObject pontoDeDisparo = this.transform.Find ("CanhaoDaTorre/PontoDeDisparo").gameObject;
 			Vector3 posicaoDoPontoDeDisparo = pontoDeDisparo.transform.position;
 			GameObject projetilObject = (GameObject) Instantiate (projetilPrefab, posicaoDoPontoDeDisparo, Quaternion.identity);
-			Projetil projetil = projetilObject.GetComponent<Projetil>();
-			projetil.defineAlvo(inimigo);
+			Projetil missil = projetilObject.GetComponent<Projetil>();
+			missil.defineAlvo(inimigo);
 		}
 	}
 
