@@ -189,7 +189,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ec20ab55683341389e640250e74743a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projetilPrefab: {fileID: 128526, guid: c7212fa4fd6a146b99bc21167e254979, type: 2}
+  projetilPrefab: {fileID: 155080, guid: c4ac0b3beb6944ca59199b34844dd739, type: 2}
   raioDeAlcance: 3
   custo: 60
   tempoDeRecarga: .400000006
