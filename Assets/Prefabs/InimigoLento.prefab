@@ -103,6 +103,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vida: 10
+  recompensa: 10
 --- !u!195 &19585652
 NavMeshAgent:
   m_ObjectHideFlags: 1

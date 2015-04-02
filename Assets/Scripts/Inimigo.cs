@@ -6,6 +6,7 @@ public class Inimigo : MonoBehaviour
 
 	private NavMeshAgent agente;
 	public int vida;
+	[SerializeField] private int recompensa;
 	
 	void Start () 
 	{
@@ -22,5 +23,10 @@ public class Inimigo : MonoBehaviour
 		{
 			Destroy(this.gameObject);
 		}
+	}
+
+	void OnDestroy() {
+		Jogador jogador = GameObject.Find("DadosDoJogador").GetComponent<Jogador>();
+		jogador.ganhaRecompensa(recompensa);
 	}
 }

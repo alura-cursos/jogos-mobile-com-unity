@@ -42,4 +42,9 @@ public class Jogador : MonoBehaviour
 	{
 		this.dinheiro -= dinheiro;
 	}
+
+	public void ganhaRecompensa(int dinheiro)
+	{
+		this.dinheiro += dinheiro;
+	}
 }
