@@ -12,6 +12,7 @@ public class Missil : MonoBehaviour, Projetil
 	void Start () 
 	{
 		autoDestroiDepoisDeSegundos (10);
+		alteraDirecao ();
 	}
 
 	void Update () 
