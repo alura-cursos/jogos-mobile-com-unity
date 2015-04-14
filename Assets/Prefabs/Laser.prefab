@@ -40,6 +40,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b230353f37ce4c849a2351a8551d155, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fumacaDoLaserPrefab: {fileID: 114864, guid: 5e8799baafc6948b79c885008daae777, type: 2}
 --- !u!120 &12008900
 LineRenderer:
   m_ObjectHideFlags: 1
