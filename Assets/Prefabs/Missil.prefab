@@ -182,6 +182,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   velocidade: 5
   pontosDeDano: 2
+  explosaoPrefab: {fileID: 185652, guid: 74959dcf1aab348079e5047643433fa6, type: 2}
 --- !u!136 &13607974
 CapsuleCollider:
   m_ObjectHideFlags: 1

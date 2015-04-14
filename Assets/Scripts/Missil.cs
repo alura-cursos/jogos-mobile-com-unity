@@ -8,6 +8,7 @@ public class Missil : MonoBehaviour, Projetil
 	public float velocidade;
 	private Inimigo alvo;
 	public int pontosDeDano;
+	[SerializeField] private GameObject explosaoPrefab;
 
 	void Start () 
 	{
@@ -53,9 +54,16 @@ public class Missil : MonoBehaviour, Projetil
 	{
 		if (elementoColidido.CompareTag ("Inimigo")) 
 		{
+			Explode ();
 			Destroy (this.gameObject);
 			Inimigo inimigo = elementoColidido.GetComponent<Inimigo>();
 			inimigo.recebeDano(pontosDeDano);
 		}
+	}
+
+	private void Explode ()
+	{
+		GameObject explosao = Instantiate(explosaoPrefab, transform.position, Quaternion.identity) as GameObject;
+		Destroy (explosao, 1);
 	}
 }

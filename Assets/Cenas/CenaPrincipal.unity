@@ -116,7 +116,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
 --- !u!65 &105802040
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -141,6 +141,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jogador: {fileID: 406666194}
+--- !u!1 &116470213
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 116470214}
+  m_Layer: 0
+  m_Name: Ponto6
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &116470214
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 116470213}
+  m_LocalRotation: {x: -.199334085, y: -.0549313016, z: .0112265004, w: -.97832638}
+  m_LocalPosition: {x: -2.22723436, y: 1.85893345, z: -6.41961384}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1935209759}
+  m_RootOrder: 5
 --- !u!1 &148401677
 GameObject:
   m_ObjectHideFlags: 0
@@ -184,7 +211,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
 --- !u!1 &170609819
 GameObject:
   m_ObjectHideFlags: 0
@@ -330,7 +357,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 359866698}
   m_Layer: 0
-  m_Name: Ponto4
+  m_Name: Ponto3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -346,8 +373,8 @@ Transform:
   m_LocalPosition: {x: -.278731495, y: 6.68673325, z: 7.35911083}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_Father: {fileID: 1935209759}
+  m_RootOrder: 2
 --- !u!1 &400718062
 GameObject:
   m_ObjectHideFlags: 0
@@ -373,8 +400,8 @@ Transform:
   m_LocalPosition: {x: 7.9644289, y: 7.01460028, z: 2.93100929}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_Father: {fileID: 1935209759}
+  m_RootOrder: 1
 --- !u!1 &406666193
 GameObject:
   m_ObjectHideFlags: 0
@@ -415,7 +442,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
 --- !u!1 &408254413
 GameObject:
   m_ObjectHideFlags: 0
@@ -487,7 +514,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
 --- !u!1 &488256481
 GameObject:
   m_ObjectHideFlags: 0
@@ -731,7 +758,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
 --- !u!1 &780841769
 GameObject:
   m_ObjectHideFlags: 0
@@ -791,7 +818,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
 --- !u!1 &808468698
 GameObject:
   m_ObjectHideFlags: 0
@@ -1138,7 +1165,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1212636912}
   m_Layer: 0
-  m_Name: Ponto3
+  m_Name: Ponto4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1151,11 +1178,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1212636911}
   m_LocalRotation: {x: -.0398575924, y: -.804596066, z: .0544133745, w: -.58997941}
-  m_LocalPosition: {x: -7.65219879, y: .910651624, z: 2.56276679}
+  m_LocalPosition: {x: -8.78626251, y: 1.07216215, z: 2.92027926}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_Father: {fileID: 1935209759}
+  m_RootOrder: 3
 --- !u!1 &1270537769
 GameObject:
   m_ObjectHideFlags: 0
@@ -1409,7 +1436,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
   m_AnchoredPosition: {x: 315.5, y: 25}
@@ -1460,7 +1487,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
 --- !u!1 &1657440012
 GameObject:
   m_ObjectHideFlags: 0
@@ -1548,12 +1575,45 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1857563120}
-  m_LocalRotation: {x: .21176976, y: -.267234445, z: .0602785274, w: .938139558}
-  m_LocalPosition: {x: 5.65172672, y: 1.89684582, z: -4.40205765}
+  m_LocalRotation: {x: .146069542, y: -.336880088, z: .0529434644, w: .928640187}
+  m_LocalPosition: {x: 7.8936615, y: 1.8790493, z: -5.34646273}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
+  m_Father: {fileID: 1935209759}
+  m_RootOrder: 0
+--- !u!1 &1935209758
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1935209759}
+  m_Layer: 0
+  m_Name: CaminhoDaCamera
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1935209759
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1935209758}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1857563121}
+  - {fileID: 400718063}
+  - {fileID: 359866698}
+  - {fileID: 1212636912}
+  - {fileID: 2039738508}
+  - {fileID: 116470214}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 0
 --- !u!1 &2023254168
 GameObject:
   m_ObjectHideFlags: 0
@@ -1777,12 +1837,39 @@ RectTransform:
   - {fileID: 1270537770}
   - {fileID: 1163856454}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &2039738507
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2039738508}
+  m_Layer: 0
+  m_Name: Ponto5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2039738508
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2039738507}
+  m_LocalRotation: {x: -.2423089, y: -.358147562, z: .0968430564, w: -.896458685}
+  m_LocalPosition: {x: -6.89739847, y: 3.25777602, z: -4.55990505}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1935209759}
+  m_RootOrder: 4
 --- !u!1 &2089209447
 GameObject:
   m_ObjectHideFlags: 0
@@ -1867,14 +1954,14 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
 --- !u!114 &2089209453
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2089209447}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c7a17ac9c8bf9408383281bc65f3a437, type: 3}
   m_Name: 
@@ -1884,9 +1971,13 @@ MonoBehaviour:
   - {fileID: 400718062}
   - {fileID: 359866697}
   - {fileID: 1212636911}
+  - {fileID: 2039738507}
+  - {fileID: 116470213}
   tempos:
   - 5
   - 7
+  - 5
+  - 5
   - 5
   - 5
 --- !u!1 &2129105210
@@ -1961,4 +2052,4 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
