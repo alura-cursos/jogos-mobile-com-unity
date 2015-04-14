@@ -31,7 +31,11 @@ public class GameController : MonoBehaviour
 
 	private bool clicouComBotaoPrimario() 
 	{
-		return Input.GetMouseButtonDown (0);
+		if (!UnityEngine.EventSystems.EventSystem.current.IsPointerOverGameObject (-1) &&
+			!UnityEngine.EventSystems.EventSystem.current.IsPointerOverGameObject (0)) {
+			return Input.GetMouseButtonDown (0);
+		}
+		return false;
 	}
 
 	private RaycastHit disparaRaioDaCameraAteUmPonto(Vector3 ponto)
