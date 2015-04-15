@@ -74,6 +74,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 445082}
   - 114: {fileID: 11406110}
+  - 95: {fileID: 9584570}
   m_Layer: 0
   m_Name: TorreLaser
   m_TagString: Untagged
@@ -207,6 +208,23 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 190218}
   m_Mesh: {fileID: 4300000, guid: a01da0aaad02348a9a6ad43d8937e1d5, type: 3}
+--- !u!95 &9584570
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 199560}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3477c3fd306a04ae2a2b386c90aac8cc, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!108 &10822954
 Light:
   m_ObjectHideFlags: 1
